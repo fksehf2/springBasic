@@ -38,6 +38,7 @@ public class ApplicationContextSameBeanFindTest {
 
     @Test
     @DisplayName("특정 타입을 모두 조회하기")
+    //crtl+shift+enter = 다음줄로 바로
     void findAllBeanByType(){
         Map<String, MemberRepository> beansOfType = ac.getBeansOfType(MemberRepository.class);
         for (String key : beansOfType.keySet()) {
